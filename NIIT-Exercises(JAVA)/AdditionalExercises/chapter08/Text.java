@@ -24,14 +24,16 @@ public class Text {
             path = scan.next();
         }
         else
-            path = "E:\\Sameer chauhan\\HARSH personal\\programing database\\java projects\\NIITExercises\\Exercises\\src\\chapter08\\new.txt";
+            path = "E:\\Sameer chauhan\\HARSH personal\\programing database\\java projects\\NIITExercises\\AdditionalExercises\\src\\chapter08\\new.txt";
+        
         try(BufferedWriter file = new BufferedWriter(new FileWriter(path,true))){
-            String text = " ";
-            while(text.matches("\\send\\s*$")){
+            String text ;
+            text = scan.nextLine();   //just have to  use it, without it the program not accepting the text so adding an extra nextLine() just worked
+            while(!text.endsWith(" end")){
+                System.out.println("Enter the text : ");
                 text = scan.nextLine();
-                char buffer[] = new char[text.length()];
-                text.getChars(0, text.length(), buffer, 0);
-                file.write(buffer);
+                file.write(text);
+                file.newLine();
                 System.out.println("Text written to the file");
             }
         }
