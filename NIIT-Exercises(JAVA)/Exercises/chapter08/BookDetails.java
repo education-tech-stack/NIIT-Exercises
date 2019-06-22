@@ -46,7 +46,7 @@ public class BookDetails {
         
     }
     private void writer(String source){
-        try(FileWriter file = new FileWriter("E:\\Sameer chauhan\\HARSH personal\\programing database\\java projects\\NIITExercises\\Exercises\\src\\chapter08\\file.txt",true)){
+        try(FileWriter file = new FileWriter("file.txt",true)){     //Set the path yourself
         source = scan.next();
         char buffer[] = new char[source.length()];
         source.getChars(0, source.length(), buffer, 0);
@@ -58,7 +58,7 @@ public class BookDetails {
         }
     }
     private void display(){
-        try(BufferedReader filer = new BufferedReader(new FileReader("E:\\Sameer chauhan\\HARSH personal\\programing database\\java projects\\NIITExercises\\Exercises\\src\\chapter08\\file.txt"))){
+        try(BufferedReader filer = new BufferedReader(new FileReader("file.txt"))){    //Set the path yourself
             String line = filer.readLine();
             int i=1;
             while(line != null){
