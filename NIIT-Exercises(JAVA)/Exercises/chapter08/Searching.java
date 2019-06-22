@@ -19,7 +19,7 @@ public class Searching {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the word to search :");
         search = scan.next();
-        try(BufferedReader file = new BufferedReader(new FileReader("E:\\Sameer chauhan\\HARSH personal\\programing database\\java projects\\NIITExercises\\Exercises\\src\\chapter08\\file.txt"))){
+        try(BufferedReader file = new BufferedReader(new FileReader("file.txt"))){  //Set the path yourself
             while((entry=file.readLine())!=null){
                 split = entry.split(" ");
                 for(String show : split)
