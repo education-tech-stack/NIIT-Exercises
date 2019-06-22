@@ -23,9 +23,9 @@ public class Text {
             System.out.println("Enter file path : ");
             path = scan.next();
         }
-        else
-            path = "E:\\Sameer chauhan\\HARSH personal\\programing database\\java projects\\NIITExercises\\AdditionalExercises\\src\\chapter08\\new.txt";
-        
+        else  //Set the default by yourself
+            path = "new.txt";
+            
         try(BufferedWriter file = new BufferedWriter(new FileWriter(path,true))){
             String text ;
             text = scan.nextLine();   //just have to  use it, without it the program not accepting the text so adding an extra nextLine() just worked
