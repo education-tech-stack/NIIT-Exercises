@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * @author harsh
  */
-public class PrimeNo {
+/*public class PrimeNo {
     public static void main(String[] args){
         int n, i;
         System.out.println("Enter a no. : ");
@@ -25,11 +25,11 @@ public class PrimeNo {
         else
             System.out.println("Not a prime no.");
     }
-}
-/*public class PrimeNo {                                  //to print the prime nos.
+}*/
+public class PrimeNo {                                  //to print the prime nos.
     public static void main(String[] args){
         int n=1, i ,count=0;
-        while(n<100000){      \\fluctuate the integer
+        while(n<500000){      //fluctuate the integer
         for ( i=2; i<=n/2; i++)
             if(n%i==0) break;
         if(i==n/2+1){
@@ -40,4 +40,4 @@ public class PrimeNo {
     }
         System.out.println("Total nos. of primes : "+count);
     }
-}*/
+}
